@@ -1,0 +1,223 @@
+@import url("https://fonts.googleapis.com/css2?family=Figtree:ital,wght@0,300..900;1,300..900&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Outfit:wght@100..900&family=Young+Serif&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Figtree:ital,wght@0,300..900;1,300..900&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Outfit:wght@100..900&display=swap");
+
+/*General body and card styles*/
+body {
+  min-width: 320px;
+  display: flex;
+  justify-content: center;
+  background-color: hsl(30, 54%, 90%);
+}
+
+.card {
+  width: 375px;
+  border-radius: 20px;
+  background-color: hsl(0, 0%, 100%);
+  padding: 20px;
+}
+
+/*Card content styles(from mobile view)*/
+.omelette-image {
+  width: 375px;
+  margin-bottom: -25px;
+  border-radius: 10px;
+}
+
+.description {
+  text-align: left;
+  padding: 30px;
+  line-height: 1.5em;
+}
+
+.description h1 {
+  font-family: "Young serif";
+  font-weight: 400;
+  font-size: 2em;
+  color: hsl(24, 5%, 18%);
+  line-height: 1em;
+}
+
+.description p {
+  font-family: Outfit, sans-serif;
+  font-weight: 400;
+  color: hsl(30, 10%, 34%);
+  margin-bottom: 0;
+}
+
+/*preparation block*/
+.preparation-time {
+  background-color: hsl(330, 100%, 98%);
+  border-radius: 18px;
+  margin: 20px;
+  padding: 5px 10px;
+}
+
+.bold {
+  color: hsl(30, 10%, 34%);
+}
+
+.preparation-time h1 {
+  font-family: Outfit, sans-serif;
+  font-weight: 600;
+  font-size: 1.3em;
+  color: hsl(332, 51%, 32%);
+  margin-left: 30px;
+}
+
+.preparation-time ul {
+  padding-left: 3.5em;
+}
+
+.preparation-time li {
+  font-family: Outfit, sans-serif;
+  line-height: 30px;
+  color: hsl(30, 10%, 34%);
+  font-weight: 400;
+  word-spacing: 0.2em;
+  padding-left: 1.5em;
+}
+.preparation-time li::marker {
+  color: hsl(332, 51%, 32%);
+}
+
+/*ingredients block*/
+.Ingredients {
+  margin: 25px;
+  border-bottom: 1px solid hsl(30, 18%, 87%);
+}
+
+.Ingredients h1 {
+  font-family: "Young serif", sans-serif;
+  font-weight: 400;
+  color: hsl(14, 45%, 36%);
+}
+
+.Ingredients ul {
+  color: hsl(30, 10%, 34%);
+  font-family: Outfit, sans-serif;
+  line-height: 2.3em;
+}
+
+/*Instructions style*/
+.Instructions {
+  color: hsl(30, 10%, 34%);
+  font-family: Outfit, sans-serif;
+  width: 330px;
+  line-height: 1.6em;
+  margin: 25px;
+  border-bottom: 1px solid hsl(30, 18%, 87%);
+}
+
+.Instructions h1 {
+  font-family: "Young serif", sans-serif;
+  font-weight: 400;
+  color: hsl(14, 45%, 36%);
+}
+
+.Instructions ol {
+  padding: 0px 20px;
+}
+
+.Instructions li {
+  padding-left: 1em;
+}
+
+.Instructions li::marker {
+  color: hsl(14, 45%, 36%);
+  font-weight: 600;
+}
+
+/*Nutrition Section*/
+.nutrition {
+  margin: 30px;
+}
+
+.nutrition h2 {
+  font-family: "Young serif", sans-serif;
+  font-weight: 400;
+  color: hsl(14, 45%, 36%);
+  width: 330px;
+}
+
+.nutrition p {
+  color: hsl(30, 10%, 34%);
+  font-family: Outfit, sans-serif;
+  line-height: 2.3em;
+}
+
+.nutrition table {
+  width: 100%;
+  border-collapse: collapse;
+  font-family: Outfit, sans-serif;
+}
+
+.nutrition th {
+  text-align: left;
+  font-weight: 400;
+  color: hsl(30, 10%, 34%);
+}
+
+.nutrition td {
+  font-weight: 700;
+
+  color: hsl(14, 45%, 36%);
+  padding: 0.8rem 0;
+}
+
+.nutrition tr {
+  border-bottom: 1px solid hsl(30, 18%, 87%);
+}
+/*footer side*/
+.attribution {
+  margin-top: 16px;
+  font-size: 11px;
+  text-align: center;
+}
+.attribution a {
+  color: hsl(228, 45%, 44%);
+  text-decoration: none;
+}
+
+/*RESPONSIVENESS CODE*/
+@media (min-width: 768px) {
+ 
+  .card {
+    width: 700px;
+    padding: 30px;
+  }
+
+  .omelette-image {
+    width: 100%;
+    border-radius: 15px;
+    margin-bottom: 0;
+  }
+
+  .description{
+    padding: 0;
+  }
+
+  .description h1 {
+    padding: 0;
+    font-size: 2.5em;
+  }
+
+  .description p,
+  .preparation-time li,
+  .Ingredients ul,
+  .Instructions,
+  .nutrition p {
+    font-size: 1.1em;
+    
+  }
+
+  .Instructions,
+  .Ingredients,
+  .nutrition {
+    width: 100%;
+    margin: 35px auto;
+  }
+
+  .nutrition h2 {
+    font-size: 1.6em;
+  }
+}
