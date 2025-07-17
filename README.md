@@ -1,4 +1,3 @@
-
 ## Table of contents
 
 - [Overview](#overview)
@@ -13,7 +12,7 @@
 - [Author](#author)
 - [Acknowledgments](#acknowledgments)
 
-**Note: Delete this note and update the table of contents based on what sections you keep.**
+
 
 ## Overview
 
@@ -124,6 +123,3 @@ I will continue building my skills on media queries and flexbox positionings.
 - Website - I don't have any personal website yet
 - Frontend Mentor - [@DARI3S](https://www.frontendmentor.io/profile/Dari3s)
 - Twitter - [@yourusername](https://www.twitter.com/yourusername)
-
-
-
